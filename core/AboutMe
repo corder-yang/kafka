@@ -1,0 +1,2 @@
+core目录
+core目录保存了Kafka Broker端的代码，基于Scala实现

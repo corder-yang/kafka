@@ -1,0 +1,7 @@
+Kafka core目录详细介绍：
+controller包：保存了Kafka控制器的代码，控制器是kafka的核心组件
+coordinator包：保存了消费者端的GroupCoordinator代码和用于事务的TransactionCoordinatord代码，可以明白Broker端协调者组件的
+              的设计原理
+log包：保存了Kafka最核心的日志结构代码，包括日志、日志段、索引文件等，封装了Log Compaction的实现机制，也是非常重要的源码包
+network包：封装了Kafka服务端网络层的代码，特别是SocketServer.scala,是Kafka实现Acceptor模式的具体实现类，非常值得一读
+server包：Kafka服务端的主代码，很多关键的Kafka组件都放在这里，比如状态机、Purgatory延时机制等

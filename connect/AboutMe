@@ -1,0 +1,2 @@
+connect目录
+保存了connect组件的源代码，Kafka Connect 组件是用来实现Kafka与外部系统之间的实时数据传输的
